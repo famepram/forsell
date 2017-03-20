@@ -1,5 +1,27 @@
 .navbar {
+    padding: 0;
 	.navbar-toggler {
-		border:none;
+		/*display:none !important;*/
+		padding : 1rem !important;
+		border-color:transparent;
+		outline: 0;
+		cursor: pointer;
+		&:focus {
+			border:none;
+		}
+		@media (max-width: 1169px) {
+			
+			display:inline-block !important;
+		}
+	}
+	.navbar-brand {
+		margin-right: auto;
+		width: 300px;
+    	height: 70px;
+    	padding : 1rem !important;
+		@media (max-width: 1169px) {
+			margin-left : 4.5rem;
+		}
+
 	}
 }
