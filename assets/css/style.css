@@ -7,6 +7,16 @@ body {
   letter-spacing: 2px;
 }
 
+/* line 10, ../scss/_general.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 15, ../scss/_general.scss */
+ul li {
+  list-style: none;
+}
+
 /* line 1, ../scss/_navbar.scss */
 .navbar {
   padding: 0;
