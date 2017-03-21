@@ -13,7 +13,7 @@
 }
 
 .sidebar {
-	background-color: #000;
+	background-color: $colorWhite;
 	width: 300px;
 	height: calc(100vh - 70px);
 	overflow: hidden;
@@ -31,6 +31,35 @@
 			@include transition(all .3s);
 		}*/
 	}
+
+	.user-info {
+		padding : 13px 15px 12px 15px;
+	    height: 135px;
+        background: url(../img/bg-user-profile.jpg) left top no-repeat;
+    	background-size: cover;
+    	position: relative;
+
+    	.image {
+			width: 48px;
+			height: 48px;
+			img {
+				width: 100%;
+			}
+    	}
+    	.info {
+			position:absolute;
+			left: 0px;
+			bottom: 0px;
+			width: 100%;
+			background-color: rgba(0,0,0,0.5);
+			padding: 7px 15px;
+			color: $colorWhite;
+			h5 {
+				font-size: 16px;
+				margin: 0;
+			}
+    	}
+	}
 }
 
 .overlay-show {
@@ -45,6 +74,8 @@
 			margin-left:0px;
 			@include transition(all .3s);
 		}
+
+
 	}
 	
 
