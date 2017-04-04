@@ -13,12 +13,16 @@
 }
 
 .sidebar {
-	background-color: $colorWhite;
+	
+	background: url(../img/bg-sidebar.jpg) center center no-repeat;
+	background-size: cover;
 	width: 300px;
-	height: calc(100vh - 70px);
+	/*height: calc(100vh - 70px);*/
+	height:100vh;
 	overflow: hidden;
 	position: fixed;
-	top: 70px;
+	top: 0px;
+/*	padding-top:70px;*/
 	left: 0;
 	display: inline-block;
 	z-index: 11 !important;
@@ -31,17 +35,38 @@
 			@include transition(all .3s);
 		}*/
 	}
+	.navbar-brand {
+		height: 70px;
+		text-align: center;
+		width: calc(300px - 36px);
+    	padding: 15px;
+    	color: $colorWhite;
+    	border-bottom: solid 1px $colorWhite;
+    	margin: 0 0.5em;
+	}
+
+	.cover {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		@include bg-gradient(bottom, top, rgba(63, 81, 181,0.75), rgba(121, 134, 203,0.75));
+		z-index: -1;
+	}
 
 	.user-info {
 		padding : 13px 15px 12px 15px;
 	    height: 135px;
-        background: url(../img/bg-user-profile.jpg) left top no-repeat;
+/*        background: url(../img/bg-user-profile.jpg) left top no-repeat;*/
     	background-size: cover;
     	position: relative;
 
     	.image {
-			width: 48px;
-			height: 48px;
+			width: 64px;
+			height: 64px;
+			margin: 0 auto;
+			margin-top: .5rem;
 			img {
 				width: 100%;
 			}
@@ -49,16 +74,95 @@
     	.info {
 			position:absolute;
 			left: 0px;
-			bottom: 0px;
+			bottom: 15px;
 			width: 100%;
-			background-color: rgba(0,0,0,0.5);
+/*			background-color: rgba(0,0,0,0.5);*/
 			padding: 7px 15px;
 			color: $colorWhite;
 			h5 {
 				font-size: 16px;
 				margin: 0;
+				text-align: center;
 			}
     	}
+	}
+
+	.menu {
+		.menu-title {
+			padding: 0 1em;
+			margin-top: .75rem;
+			h4 {
+				color: $colorGreylight;
+				font-size: 16px;
+/*				font-weight: 600;*/
+				padding-bottom: .5rem;
+				border-bottom:solid 1px $colorWhite;
+				opacity: 0.875;
+			}
+		}
+		ul.nav {
+			margin-bottom: 1.5rem;
+			.nav-item {
+				a {
+					color: $colorWhite;
+					font-size: 15px;
+					font-weight: 400;
+					width: 100%;
+				}
+				&.active, &:hover, &:focus {
+					background-color : rgba(33, 33, 33,0.25);
+					a {
+						color: $colorWhite;
+						@include border-radius(0px);
+					}
+				}
+				
+				&.has-dropdown {
+					/*max-height: 37px;*/
+					
+					&.show {
+						background-color: rgba(33, 33, 33, 0.25);
+						.dropdown-menu {
+							@include transition(none);
+							max-height: 1000px;
+							@include transition(all .75s ease-in);
+						}
+						a {
+							cursor: pointer;
+						}
+						/*@include transition(max-height .3s);*/
+					}
+					a {
+						background: transparent;
+					}
+					.dropdown-menu {
+						@include transition(none);
+						border: none;
+						position: relative !important;
+						background: transparent;
+						width: 100%;
+						overflow: hidden;
+						display: block !important;
+						max-height: 0px;
+						@include transition(all .75s ease-out);
+					    padding: 0rem 0;
+						li {
+							background: transparent !important;
+							a {
+								width: 100%;
+								display: block;
+								text-decoration: none;
+								padding: 0.5em 1em;
+							}
+
+
+						}
+					}
+				}
+				
+			}
+
+		}
 	}
 }
 

@@ -2,7 +2,7 @@
 	<button class="navbar-toggler navbar-toggler-left" aria-controls="sidebar-left" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
-	<a class="navbar-brand" href="#">FIXED ASSETS</a>
+	
 
 	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 		<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
