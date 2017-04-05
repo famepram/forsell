@@ -19,4 +19,9 @@ $(document).ready(function(){
 			$('body').addClass('overlay-show');
 		}
 	});
+
+	// $('.dropdown-toggle').click(function(e){
+	// 	e.preventDefault();
+	// 	$(this).parent('.has-dropdown').toggleClass('show');
+	// });
 });

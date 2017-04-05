@@ -135,31 +135,34 @@ ul li {
 .sidebar .navbar-brand {
   height: 70px;
   text-align: center;
-  width: calc(300px - 36px);
+  font-weight: 600;
+  /*width: calc(300px - 36px);*/
+  width: 100%;
   padding: 15px;
   color: #FFFFFF;
-  border-bottom: solid 1px #FFFFFF;
-  margin: 0 0.5em;
+  /*    	border-bottom: solid 1px $colorWhite;*/
+  margin: 0;
+  background-color: rgba(63, 81, 181, 0.8);
 }
-/* line 48, ../scss/_sidebar.scss */
+/* line 51, ../scss/_sidebar.scss */
 .sidebar .cover {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-linear-gradient(linear, bottom, top, rgba(63, 81, 181, 0.75), rgba(121, 134, 203, 0.75));
+  background-image: -webkit-linear-gradient(linear, top, bottom, rgba(63, 81, 181, 0.9), rgba(63, 81, 181, 0.75));
   /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
-  background-image: -webkit-linear-gradient(top, rgba(63, 81, 181, 0.75), rgba(121, 134, 203, 0.75));
+  background-image: -webkit-linear-gradient(bottom, rgba(63, 81, 181, 0.9), rgba(63, 81, 181, 0.75));
   /* Firefox 3.6 - 15 */
-  background-image: -moz-linear-gradient(top, rgba(63, 81, 181, 0.75), rgba(121, 134, 203, 0.75));
+  background-image: -moz-linear-gradient(bottom, rgba(63, 81, 181, 0.9), rgba(63, 81, 181, 0.75));
   /* Opera 11.1 - 12 */
-  background-image: -o-linear-gradient(top, rgba(63, 81, 181, 0.75), rgba(121, 134, 203, 0.75));
+  background-image: -o-linear-gradient(bottom, rgba(63, 81, 181, 0.9), rgba(63, 81, 181, 0.75));
   /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
-  background-image: linear-gradient(to top, rgba(63, 81, 181, 0.75), rgba(121, 134, 203, 0.75));
+  background-image: linear-gradient(to bottom, rgba(63, 81, 181, 0.9), rgba(63, 81, 181, 0.75));
   z-index: -1;
 }
-/* line 58, ../scss/_sidebar.scss */
+/* line 61, ../scss/_sidebar.scss */
 .sidebar .user-info {
   padding: 13px 15px 12px 15px;
   height: 135px;
@@ -167,18 +170,18 @@ ul li {
   background-size: cover;
   position: relative;
 }
-/* line 65, ../scss/_sidebar.scss */
+/* line 68, ../scss/_sidebar.scss */
 .sidebar .user-info .image {
   width: 64px;
   height: 64px;
   margin: 0 auto;
   margin-top: .5rem;
 }
-/* line 70, ../scss/_sidebar.scss */
+/* line 73, ../scss/_sidebar.scss */
 .sidebar .user-info .image img {
   width: 100%;
 }
-/* line 74, ../scss/_sidebar.scss */
+/* line 77, ../scss/_sidebar.scss */
 .sidebar .user-info .info {
   position: absolute;
   left: 0px;
@@ -188,18 +191,18 @@ ul li {
   padding: 7px 15px;
   color: #FFFFFF;
 }
-/* line 82, ../scss/_sidebar.scss */
+/* line 85, ../scss/_sidebar.scss */
 .sidebar .user-info .info h5 {
   font-size: 16px;
   margin: 0;
   text-align: center;
 }
-/* line 91, ../scss/_sidebar.scss */
+/* line 94, ../scss/_sidebar.scss */
 .sidebar .menu .menu-title {
   padding: 0 1em;
   margin-top: .75rem;
 }
-/* line 94, ../scss/_sidebar.scss */
+/* line 97, ../scss/_sidebar.scss */
 .sidebar .menu .menu-title h4 {
   color: #F3F3F3;
   font-size: 16px;
@@ -208,22 +211,23 @@ ul li {
   border-bottom: solid 1px #FFFFFF;
   opacity: 0.875;
 }
-/* line 103, ../scss/_sidebar.scss */
+/* line 106, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav {
   margin-bottom: 1.5rem;
 }
-/* line 106, ../scss/_sidebar.scss */
-.sidebar .menu ul.nav .nav-item a {
+/* line 109, ../scss/_sidebar.scss */
+.sidebar .menu ul.nav .nav-item .nav-link {
   color: #FFFFFF;
   font-size: 15px;
   font-weight: 400;
   width: 100%;
+  padding: 0.75em 1em;
 }
-/* line 112, ../scss/_sidebar.scss */
+/* line 116, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.active, .sidebar .menu ul.nav .nav-item:hover, .sidebar .menu ul.nav .nav-item:focus {
   background-color: rgba(33, 33, 33, 0.25);
 }
-/* line 114, ../scss/_sidebar.scss */
+/* line 118, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.active a, .sidebar .menu ul.nav .nav-item:hover a, .sidebar .menu ul.nav .nav-item:focus a {
   color: #FFFFFF;
   -webkit-border-radius: 0px !important;
@@ -231,36 +235,15 @@ ul li {
   -ms-border-radius: 0px !important;
   border-radius: 0px !important;
 }
-/* line 120, ../scss/_sidebar.scss */
+/* line 124, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.has-dropdown {
   /*max-height: 37px;*/
 }
-/* line 123, ../scss/_sidebar.scss */
-.sidebar .menu ul.nav .nav-item.has-dropdown.show {
-  background-color: rgba(33, 33, 33, 0.25);
-  /*@include transition(max-height .3s);*/
-}
-/* line 125, ../scss/_sidebar.scss */
-.sidebar .menu ul.nav .nav-item.has-dropdown.show .dropdown-menu {
-  -moz-transition: none;
-  -o-transition: none;
-  -webkit-transition: none;
-  transition: none;
-  max-height: 1000px;
-  -moz-transition: all 0.75s ease-in;
-  -o-transition: all 0.75s ease-in;
-  -webkit-transition: all 0.75s ease-in;
-  transition: all 0.75s ease-in;
-}
-/* line 130, ../scss/_sidebar.scss */
-.sidebar .menu ul.nav .nav-item.has-dropdown.show a {
-  cursor: pointer;
-}
-/* line 135, ../scss/_sidebar.scss */
+/* line 127, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.has-dropdown a {
   background: transparent;
 }
-/* line 138, ../scss/_sidebar.scss */
+/* line 130, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.has-dropdown .dropdown-menu {
   -moz-transition: none;
   -o-transition: none;
@@ -272,18 +255,18 @@ ul li {
   width: 100%;
   overflow: hidden;
   display: block !important;
-  max-height: 0px;
-  -moz-transition: all 0.75s ease-out;
-  -o-transition: all 0.75s ease-out;
-  -webkit-transition: all 0.75s ease-out;
-  transition: all 0.75s ease-out;
+  /*						max-height: 0px;*/
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
   padding: 0rem 0;
 }
-/* line 149, ../scss/_sidebar.scss */
+/* line 141, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.has-dropdown .dropdown-menu li {
   background: transparent !important;
 }
-/* line 151, ../scss/_sidebar.scss */
+/* line 143, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.has-dropdown .dropdown-menu li a {
   width: 100%;
   display: block;
@@ -291,7 +274,7 @@ ul li {
   padding: 0.5em 1em;
 }
 
-/* line 169, ../scss/_sidebar.scss */
+/* line 161, ../scss/_sidebar.scss */
 .overlay-show {
   /*	.overlay {
   		display: block;
@@ -300,7 +283,7 @@ ul li {
   	}*/
 }
 @media (max-width: 1169px) {
-  /* line 176, ../scss/_sidebar.scss */
+  /* line 168, ../scss/_sidebar.scss */
   .overlay-show .sidebar {
     margin-left: 0px;
     -moz-transition: all 0.3s;

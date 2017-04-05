@@ -18,8 +18,8 @@
 	              	<a class="nav-link " href="#">Dashboard <span class="sr-only">(current)</span></a>
 	            </li>
 	            <li class="nav-item has-dropdown">
-	              	<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Forms</a>
-	              	<ul class="dropdown-menu">
+	              	<a class="nav-link dropdown-toggle" data-toggle="collapse" href="#menu-child-forms">Forms</a>
+	              	<ul id="#menu-child-forms" class="dropdown-menu collapse">
 	              		<li class="dropdown-item">
 	              			<a href="">Form Basic</a>
 	              		</li>
