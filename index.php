@@ -11,6 +11,15 @@
 	<body cz-shortcut-listen="true">
 		<?php include('inc/header.php');?>
 		<?php include('inc/sidebar.php');?>
+		<section class="content">
+			<div class="header">
+				<h1>Blank Page</h1>
+				<ol class="breadcrumb">
+				  <li class="breadcrumb-item"><a href="#">Home</a></li>
+				  <li class="breadcrumb-item active">Library</li>
+				</ol>
+			</div>
+		</section>
 		
 
 	    <!-- Bootstrap core JavaScript

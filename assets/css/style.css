@@ -17,6 +17,24 @@ ul li {
   list-style: none;
 }
 
+/* line 22, ../scss/_general.scss */
+.content {
+  margin: 85px 15px 0 315px;
+  padding: .5rem;
+}
+@media (max-width: 1169px) {
+  /* line 22, ../scss/_general.scss */
+  .content {
+    margin: 100px 15px 0 15px;
+  }
+}
+/* line 29, ../scss/_general.scss */
+.content .header h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 /* line 1, ../scss/_navbar.scss */
 .navbar {
   padding: 0;
@@ -82,6 +100,12 @@ ul li {
 /* line 44, ../scss/_navbar.scss */
 .navbar .navbar-nav li a i {
   font-size: 24px;
+}
+
+/* line 1, ../scss/_reset.scss */
+ol.breadcrumb {
+  padding: 0rem !important;
+  background-color: transparent !important;
 }
 
 /* line 1, ../scss/_sidebar.scss */
@@ -151,15 +175,15 @@ ul li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-linear-gradient(linear, top, bottom, rgba(63, 81, 181, 0.9), rgba(63, 81, 181, 0.75));
+  background-image: -webkit-linear-gradient(linear, bottom, top, #3f51b5, rgba(63, 81, 181, 0.75));
   /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
-  background-image: -webkit-linear-gradient(bottom, rgba(63, 81, 181, 0.9), rgba(63, 81, 181, 0.75));
+  background-image: -webkit-linear-gradient(top, #3f51b5, rgba(63, 81, 181, 0.75));
   /* Firefox 3.6 - 15 */
-  background-image: -moz-linear-gradient(bottom, rgba(63, 81, 181, 0.9), rgba(63, 81, 181, 0.75));
+  background-image: -moz-linear-gradient(top, #3f51b5, rgba(63, 81, 181, 0.75));
   /* Opera 11.1 - 12 */
-  background-image: -o-linear-gradient(bottom, rgba(63, 81, 181, 0.9), rgba(63, 81, 181, 0.75));
+  background-image: -o-linear-gradient(top, #3f51b5, rgba(63, 81, 181, 0.75));
   /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
-  background-image: linear-gradient(to bottom, rgba(63, 81, 181, 0.9), rgba(63, 81, 181, 0.75));
+  background-image: linear-gradient(to top, #3f51b5, rgba(63, 81, 181, 0.75));
   z-index: -1;
 }
 /* line 61, ../scss/_sidebar.scss */
@@ -235,46 +259,46 @@ ul li {
   -ms-border-radius: 0px !important;
   border-radius: 0px !important;
 }
-/* line 124, ../scss/_sidebar.scss */
-.sidebar .menu ul.nav .nav-item.has-dropdown {
-  /*max-height: 37px;*/
+/* line 125, ../scss/_sidebar.scss */
+.sidebar .menu ul.nav .nav-item.has-child[aria-expanded="true"] {
+  background-color: rgba(33, 33, 33, 0.25);
 }
-/* line 127, ../scss/_sidebar.scss */
-.sidebar .menu ul.nav .nav-item.has-dropdown a {
-  background: transparent;
+/* line 128, ../scss/_sidebar.scss */
+.sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper {
+  margin-left: 1rem;
 }
 /* line 130, ../scss/_sidebar.scss */
-.sidebar .menu ul.nav .nav-item.has-dropdown .dropdown-menu {
-  -moz-transition: none;
-  -o-transition: none;
-  -webkit-transition: none;
-  transition: none;
-  border: none;
-  position: relative !important;
-  background: transparent;
-  width: 100%;
-  overflow: hidden;
-  display: block !important;
-  /*						max-height: 0px;*/
-  -moz-transition: all 0.25s ease-in;
-  -o-transition: all 0.25s ease-in;
-  -webkit-transition: all 0.25s ease-in;
-  transition: all 0.25s ease-in;
-  padding: 0rem 0;
+.sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper .nav {
+  margin-bottom: 0rem;
+}
+/* line 132, ../scss/_sidebar.scss */
+.sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper .nav .nav-item {
+  background: none !important;
+  background-color: transparent !important;
+}
+/* line 135, ../scss/_sidebar.scss */
+.sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper .nav .nav-item a {
+  background: none !important;
+  background-color: transparent !important;
+  /*padding-left: 2rem;*/
 }
 /* line 141, ../scss/_sidebar.scss */
-.sidebar .menu ul.nav .nav-item.has-dropdown .dropdown-menu li {
-  background: transparent !important;
+.sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper .nav:hover, .sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper .nav:focus {
+  background: none !important;
+  background-color: transparent !important;
 }
-/* line 143, ../scss/_sidebar.scss */
-.sidebar .menu ul.nav .nav-item.has-dropdown .dropdown-menu li a {
-  width: 100%;
-  display: block;
-  text-decoration: none;
-  padding: 0.5em 1em;
+/* line 144, ../scss/_sidebar.scss */
+.sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper .nav:hover a, .sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper .nav:focus a {
+  background: none !important;
+  background-color: transparent !important;
+  color: #FFFFFF;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  border-radius: 0px !important;
 }
 
-/* line 161, ../scss/_sidebar.scss */
+/* line 159, ../scss/_sidebar.scss */
 .overlay-show {
   /*	.overlay {
   		display: block;
@@ -283,7 +307,7 @@ ul li {
   	}*/
 }
 @media (max-width: 1169px) {
-  /* line 168, ../scss/_sidebar.scss */
+  /* line 166, ../scss/_sidebar.scss */
   .overlay-show .sidebar {
     margin-left: 0px;
     -moz-transition: all 0.3s;
