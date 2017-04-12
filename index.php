@@ -19,6 +19,16 @@
 				  <li class="breadcrumb-item active">Library</li>
 				</ol>
 			</div>
+			<div class="row clearfix">
+				<div class="col-lg-3">
+					<div class="info-card">
+						<div class="icon">
+							
+						</div>
+						<div class="content"></div>
+					</div>
+				</div>
+			</div>
 		</section>
 		
 
