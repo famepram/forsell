@@ -107,6 +107,10 @@ ol.breadcrumb {
   padding: 0rem !important;
   background-color: transparent !important;
 }
+/* line 4, ../scss/_reset.scss */
+ol.breadcrumb li {
+  font-size: .875rem;
+}
 
 /* line 1, ../scss/_sidebar.scss */
 .overlay {
@@ -247,11 +251,16 @@ ol.breadcrumb {
   width: 100%;
   padding: 0.75em 1em;
 }
-/* line 116, ../scss/_sidebar.scss */
+/* line 115, ../scss/_sidebar.scss */
+.sidebar .menu ul.nav .nav-item .nav-link i {
+  font-size: 1.25rem;
+  padding-right: .5rem;
+}
+/* line 120, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.active, .sidebar .menu ul.nav .nav-item:hover, .sidebar .menu ul.nav .nav-item:focus {
   background-color: rgba(33, 33, 33, 0.25);
 }
-/* line 118, ../scss/_sidebar.scss */
+/* line 122, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.active a, .sidebar .menu ul.nav .nav-item:hover a, .sidebar .menu ul.nav .nav-item:focus a {
   color: #FFFFFF;
   -webkit-border-radius: 0px !important;
@@ -259,35 +268,35 @@ ol.breadcrumb {
   -ms-border-radius: 0px !important;
   border-radius: 0px !important;
 }
-/* line 125, ../scss/_sidebar.scss */
+/* line 129, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.has-child[aria-expanded="true"] {
   background-color: rgba(33, 33, 33, 0.25);
 }
-/* line 128, ../scss/_sidebar.scss */
+/* line 132, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper {
   margin-left: 1rem;
 }
-/* line 130, ../scss/_sidebar.scss */
+/* line 134, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper .nav {
   margin-bottom: 0rem;
 }
-/* line 132, ../scss/_sidebar.scss */
+/* line 136, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper .nav .nav-item {
   background: none !important;
   background-color: transparent !important;
 }
-/* line 135, ../scss/_sidebar.scss */
+/* line 139, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper .nav .nav-item a {
   background: none !important;
   background-color: transparent !important;
-  /*padding-left: 2rem;*/
+  padding-left: 2rem;
 }
-/* line 141, ../scss/_sidebar.scss */
+/* line 146, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper .nav:hover, .sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper .nav:focus {
   background: none !important;
   background-color: transparent !important;
 }
-/* line 144, ../scss/_sidebar.scss */
+/* line 149, ../scss/_sidebar.scss */
 .sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper .nav:hover a, .sidebar .menu ul.nav .nav-item.has-child .menu-child-wrapper .nav:focus a {
   background: none !important;
   background-color: transparent !important;
@@ -298,7 +307,7 @@ ol.breadcrumb {
   border-radius: 0px !important;
 }
 
-/* line 159, ../scss/_sidebar.scss */
+/* line 164, ../scss/_sidebar.scss */
 .overlay-show {
   /*	.overlay {
   		display: block;
@@ -307,7 +316,7 @@ ol.breadcrumb {
   	}*/
 }
 @media (max-width: 1169px) {
-  /* line 166, ../scss/_sidebar.scss */
+  /* line 171, ../scss/_sidebar.scss */
   .overlay-show .sidebar {
     margin-left: 0px;
     -moz-transition: all 0.3s;
