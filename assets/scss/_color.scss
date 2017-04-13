@@ -11,10 +11,12 @@ $colorWhite 	: #FFFFFF;
 
 $colors-list-name : red pink purple deep-purple indigo blue light-blue cyan teal green light-green lime yellow amber orange deep-orange brown grey blue-grey;
 $colors-list: #F44336 #E91E63 #9C27B0 #673AB7 #3F51B5 #2196F3 #03A9F4 #00BCD4 #009688 #4CAF50 #8BC34A #CDDC39 #FFEB3B #FFC107 #FF9800 #FF5722 #795548 #9E9E9E #607D8B;
-/*@each $current-color in $colors-list {
+@each $current-color in $colors-list {
     $i: index($colors-list, $current-color);
     $name : nth($colors-list-name, $i);
-    .bg-{$name} {
-        background-color: $current-color;
+    .bg-#{""+$name} {
+        background-color: $current-color !important;
+        color : $colorWhite;
     }
-}*/
+}
+

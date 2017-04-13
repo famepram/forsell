@@ -13,17 +13,17 @@
 		<?php include('inc/sidebar.php');?>
 		<section class="content">
 			<div class="header">
-				<h1>Blank Page</h1>
+				<h1>Info Card</h1>
 				<ol class="breadcrumb">
 				  <li class="breadcrumb-item"><a href="#">Home</a></li>
-				  <li class="breadcrumb-item active">Library</li>
+				  <li class="breadcrumb-item active">Info Card</li>
 				</ol>
 			</div>
 			<div class="row clearfix">
 				<div class="col-lg-3">
 					<div class="info-card bg-red">
 						<div class="icon">
-							<i class="zmdi zmdi-group"></i>
+							<i class="zmdi zmdi-album"></i>
 						</div>
 						<div class="info">
 							<div class="label">GROUPS COUNT</div>
@@ -36,7 +36,7 @@
 				<div class="col-lg-3">
 					<div class="info-card bg-blue">
 						<div class="icon">
-							<i class="zmdi zmdi-group"></i>
+							<i class="zmdi zmdi-attachment-alt"></i>
 						</div>
 						<div class="info">
 							<div class="label">GROUPS COUNT</div>
@@ -49,7 +49,7 @@
 				<div class="col-lg-3">
 					<div class="info-card bg-teal">
 						<div class="icon">
-							<i class="zmdi zmdi-group"></i>
+							<i class="zmdi zmdi-book-image"></i>
 						</div>
 						<div class="info">
 							<div class="label">GROUPS COUNT</div>
@@ -62,7 +62,7 @@
 				<div class="col-lg-3">
 					<div class="info-card bg-green">
 						<div class="icon">
-							<i class="zmdi zmdi-group"></i>
+							<i class="zmdi zmdi-car-taxi"></i>
 						</div>
 						<div class="info">
 							<div class="label">GROUPS COUNT</div>

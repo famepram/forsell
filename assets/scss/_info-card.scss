@@ -1,9 +1,33 @@
 .info-card {
 	width:100%;
-	.icon {
-
+	height: 80px;
+    display: flex;
+    background-color: $colorWhite; 
+    margin-bottom: 25px;
+	.icon, .info {
+		display: inline-block;
 	}
-	.content {
-		
+	
+	.icon {
+		text-align: center;
+	    background-color: rgba(0, 0, 0, 0.12);
+	    width: 80px;
+	    i {
+	    	font-size: 3rem;
+	    	line-height: 80px;
+	    }
+	}
+	.info {
+	    padding: 7px 10px;
+		.label {
+			margin-top: 10px;
+			font-size: 13px;
+			font-weight: 600;
+		}
+		.value {
+		    margin-top: -4px;
+			font-size: 26px;
+			font-weight: 600;
+		}
 	}
 }
